@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat UI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body
+    class="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#f3efe9] via-[#e7dfd6] to-[#d8cfc4]"
+  >
+    <!-- Card -->
+    <div
+      class="w-[380px] rounded-xl bg-[#faf8f6] border border-[#e2ddd7] shadow-[0_10px_30px_rgba(0,0,0,0.12)] p-5"
+    >
+      <!-- Header -->
+      <h1 class="text-center text-lg font-semibold text-[#3e3a36] mb-4">
+        Message Console
+      </h1>
+
+      <!-- Status Buttons -->
+      <div class="mb-2" id="username">
+        
+       
+      </div>
+      <div class="flex justify-center gap-3 mb-4">
+        <button
+          class="px-4 py-1.5 rounded-md bg-[#4f8a5b] text-white text-sm font-medium hover:bg-[#3f7249] transition" id="goonline"
+        >
+          Online
+        </button>
+
+        <button
+          class="px-4 py-1.5 rounded-md bg-[#b35c4a] text-white text-sm font-medium hover:bg-[#9c4f3f] transition" id="gooofline"
+        >
+          Offline
+        </button>
+      </div>
+
+      <!-- Chat  box Area -->
+      <div
+        class="h-[300px] rounded-lg bg-[#f4f1ed] border border-[#e0dad4] p-3 text-sm text-[#3e3a36] overflow-y-auto"
+      >
+        <div
+          class="gap-2 justify-center " id="contextmsg">
+        </div>
+      </div>
+    
+      <!-- Input -->
+      <div class="mt-4 flex gap-2">
+        <input
+          type="text"
+          placeholder="Type a message"
+          class="flex-1 px-3 py-2 rounded-md bg-white border border-[#d6d0ca] text-sm outline-none focus:ring-2 focus:ring-[#bfae9b]" id="msgcontextmenu"   name="content"
+        />
+
+        <button
+          class="px-4 py-2 rounded-md bg-[#3e3a36] text-white text-sm font-medium hover:bg-black transition" id="sendbtn"
+        >
+          Send
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
